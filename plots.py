@@ -13,11 +13,6 @@ import pandas as pd
 import seaborn as sns
 !git clone https://github.com/jjguglielmi/Neural-Architecture-Search-without-Training.git
 
-kwargs = dict(hist_kws={'alpha':.3}, kde_kws={'linewidth':2})
-plt.figure(figsize=(8,5), dpi= 80)
-sns.distplot(x0, color='deepskyblue', label='NoSkip', **kwargs)
-sns.distplot(xS, color='red', label='Skip', **kwargs)
-plt.legend()
 
 def func(string):
   count = ''
