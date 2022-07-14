@@ -5,12 +5,12 @@ Machine Learning and Deep Learning course in master's degree at Politecnico di T
 
 In this README, we provide:
 - [Summary of our work](#Summary)
-  - [Our-variation](#Our-variation-in-REA-'-s-mutation)
+  - [Our-variation](#our-variation-in-reas-mutation)
 - [Architecture pretrained with NASWOT metric](#Architectures-for-datasets-with-metrics)
 - [How to run the code](#Running-the-Code)
 
 
-**If you have any questions, please open an issue or email us: **
+*If you have any questions, please open an issue or email us:*
 - S.Ferrua : s292946@studenti.polito.it
 - J.Guglielmi : s303105@studenti.polito.it
 - A. Orazalin: s298255@studenti.polito.it
