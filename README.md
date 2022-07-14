@@ -62,11 +62,12 @@ _Table 1 : SKIP-POSITION and TEST ACCURACY on first 5 higher accuracies (Cifar10
 For the caption `0 0 1`:
  -  The first 0 represents the absence of skip connections on the edge that connects the input node to the first middle one
  -  The second 0 represents the absence of skip connections on the edges that connect the input node to the second middle one and that connect the first middle node to the second middle one
- -  The 1 represents the presence of the skip connection either:
-  - On the edge that connects the input node to the output one
-  - Or on the edge that connects the first hidden node to the output one
+ -  The 1 represents the presence of the skip connection either: on the edge that connects the input node to the output one or on the edge that connects the first middle node to the output one or on the edge that connects the second middle node to the output one.
 
-The model that reaches the best accuracy, has 1 skip in the edges that come to the output node. But where is it located precisely? In our case study, we have found that, selecting the first 10 architectures in terms of accuracy, all of them have the skip connection located on the edge that connects the input node to the output node. So, our operation mutation found consists of the satisfaction of the quoted condition. If the skip connection is not there, then the mutation occurs with the following possible options: 
+Watching those networks with high accuracies and their architecture string, we have found that those with skip connection on the edge that connects the input node to the output node, works really good for the given task.
+
+
+So, our operation mutation found consists of the satisfaction of the quoted condition. If the skip connection is not there, then the mutation occurs with the following possible options: 
 1) If the skip connection is on the edge that connects the input node to the first node, then we invert this operation with the one that connects the input node and the output node. 
 2) If the skip connection is on the edge that connects the input node to the second node, then we invert the skip operation with the one located on the edge that connect the input node to the output node, and we do an operation inversion between: edge that connects the nodes in the middle and the edge that attaches the first node to the output node. 
 3) If the skip connection is on the edge that connects the first node to the second one, first of all we overturn this with the one on the edge that brings together the input node with the second node. After that it is executed the point 2. 
