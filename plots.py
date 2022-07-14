@@ -23,9 +23,9 @@ def func(string):
   return count
 
 header=['Dataset', 'Arch', 'LogDet', 'TestAccuracy', 'Time']
-csvs = ['/content/Neural-Architecture-Search-without-Training/out_C10_15k.csv', 
-        '/content/Neural-Architecture-Search-without-Training/out_cifar100_15k.csv', 
-        '/content/Neural-Architecture-Search-without-Training/out_IN_15k.csv']
+csvs = ['/content/Neural-Architecture-Search-without-Training/pre-trained-architectures/out_C10_15k.csv', 
+        '/content/Neural-Architecture-Search-without-Training/pre-trained-architectures/out_cifar100_15k.csv', 
+        '/content/Neural-Architecture-Search-without-Training/pre-trained-architectures/out_IN_15k.csv']
 datasets = ['Cifar10', 'Cifar100', 'ImageNet16-120']
 verbose = False
 for csv, ds in zip(csvs, datasets):
