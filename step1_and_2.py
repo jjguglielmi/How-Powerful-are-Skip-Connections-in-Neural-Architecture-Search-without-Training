@@ -54,7 +54,6 @@ api = create("/content/NATS-tss-v1_0-3ffb9-simple", 'tss', fast_mode=True, verbo
 assert torch.cuda.is_available(), "CUDA is not available."
 torch.backends.cudnn.enabled = True
 torch.backends.cudnn.benchmark = True
-batch_size = 128
 
 """# Settings for trainloader and data argumentation"""
 
