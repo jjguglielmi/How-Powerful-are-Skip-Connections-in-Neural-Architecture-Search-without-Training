@@ -67,7 +67,7 @@ The top 10 accuracy models were extracted from figure below.
 
 ### Our variation in REA's mutation
 To find the architecture that satisfies us, using search algorithms, we used skip connection as a filter to find such an architecture. 
-We have decided to introduce a filter while we construct a random architecture, because by plotting histograms based on the conducted experiments, we find out that better accuracies are reached either with skips included in the process or not included at all. 
+We have decided to introduce a filter while we construct a random architecture, because by plotting histograms based on the conducted experiments, we find out that better accuracies are reached either with one skip included in the process or not included at all. 
 
 ## Architectures for datasets with metrics
 You can find all the csv files (from the `step1_and_2.py`)with the all 15625 architectures applied to each dataset with a batch_size of 128, representing the respective dataset, the structure of the architecture, the metric NASWOT, the correspondent test-accuracy and at the end the execution time. All the plots reported in the file `FinalProject.ipynb`, are based on the same batch size.
