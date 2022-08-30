@@ -76,6 +76,6 @@ You can find all the csv files (from the `step1_and_2.py`)with the all 15625 arc
 - Install the package: `pip install .` (add `-e` for editable mode) -- note that all dependencies other than pytorch will be automatically installed.
   - Reproducing results on NATS Benchmark
   
-  All you need is the file called Project8_Group1_MLDL.ipynb. There you can find all our purposes.
+  All you need is the file called `FinalProject.ipynb`. There you can find all our purposes.
   
  
