@@ -70,7 +70,7 @@ To find the architecture that satisfies us, using search algorithms, we used ski
 We have decided to introduce a filter while we construct a random architecture, because by plotting histograms based on the conducted experiments, we find out that better accuracies are reached either with skips included in the process or not included at all. 
 
 ## Architectures for datasets with metrics
-You can find all the csv files (from the `step1_and_2.py`)with the all 15625 architectures applied to each dataset with a batch_size of 32, representing the respective dataset, the structure of the architecture, the metric NASWOT, the correspondent test-accuracy and at the end the execution time. All the plots reported in the file `plots.py`, are based on the same batch size.
+You can find all the csv files (from the `step1_and_2.py`)with the all 15625 architectures applied to each dataset with a batch_size of 128, representing the respective dataset, the structure of the architecture, the metric NASWOT, the correspondent test-accuracy and at the end the execution time. All the plots reported in the file `FinalProject.ipynb`, are based on the same batch size.
 ## How to run the code
 - Install [PyTorch](https://pytorch.org/) for your system (v1.5.0 or later).
 - Install the package: `pip install .` (add `-e` for editable mode) -- note that all dependencies other than pytorch will be automatically installed.
